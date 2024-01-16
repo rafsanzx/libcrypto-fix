@@ -10,8 +10,6 @@ sudo apt install gnupg -y
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ED444FF07D8D0BF6
 
-sudo apt --fix-broken install -y
-
 cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
 sudo apt update
@@ -30,5 +28,7 @@ sudo cp -av lib/aarch64-linux-gnu/* /lib/aarch64-linux-gnu/
 ##for x86_64
 
 ##sudo cp -av lib/x86_64-linux-gnu/* /lib/x86_64-linux-gnu/
+
+sudo apt --fix-broken install -y
 
 sudo apt update
